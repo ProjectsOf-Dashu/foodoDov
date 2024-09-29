@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Good Co</title>
+
+    <!--Css-->
+
+    <!--Icon Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!--Locmotive css-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="assets/images__1_-removebg-preview.png" type="image/x-icon">
+
+  <link rel="stylesheet" crossorigin href="/assets/index-DApVThEF.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+<!---cursor Animation-->
+   
+  <div class="cursor h-[150px] w-[150px] rounded-full bg-gray-200 fixed translate-[(-50%,-50%)] scale-0 opacity-0">
+       
+  </div>
+
+    <!--navbar-->
+
+    <header class="header w-full fixed top-0 left-0 right-0 z-50 ">
+        <nav class="flex justify-between items-center px-6 py-5 backdrop-blur-lg bg-white/30 uppercase " id="nav">
+
+            <div class="nav-part">
+                <svg width="106" height="83" id="svgOne" class="h-[82px]" viewBox="0 0 106 83" fill="none"
+                 xmlns="http://www.w3.org/2000/svg" style="transform: translate(0px, 0px);">
+                 <g clip-path="url(#clip0_2228_162)">
+                    <path d="M5.50062 6.4473H0V0.557617H17.7807V6.4473H12.2464V25.4842H5.50062V6.4473Z" fill="currentColor"></path><path d="M43.2791 12.4126C43.8662 14.6434 44.027 15.8982 44.0756 16.0715C44.386 14.504 44.629 13.2831 44.8235 12.4126L47.7402 0.56543H54.5571L47.5682 25.492H41.3047L38.2609 14.8582C38.0889 14.2327 37.8122 13.1173 37.4307 11.512C37.1204 12.8008 36.8773 13.9161 36.6006 14.8582L33.6091 25.492H27.3307L20.3418 0.56543H27.1549L29.9931 12.488C30.3035 13.7428 30.5466 14.9976 30.741 16.2185C30.9803 14.9298 31.2944 13.675 31.6048 12.488L34.7309 0.56543H40.1642L43.2791 12.4126Z" fill="currentColor"></path><path d="M76.5219 22.3113C74.173 24.6188 71.066 25.9784 67.7892 26.1326C64.5124 26.2867 61.2932 25.2248 58.7412 23.1478C57.3228 22.0067 56.1618 20.5745 55.3351 18.9463C54.5085 17.3181 54.0353 15.5313 53.9468 13.7045C53.8584 11.8778 54.1568 10.053 54.8223 8.35149C55.4877 6.64996 56.5049 5.11064 57.8063 3.83585C60.3099 1.37646 63.6678 0 67.1641 0C70.6604 0 74.0184 1.37646 76.5219 3.83585C77.7366 5.04162 78.7013 6.47878 79.3597 8.06372C80.0181 9.64865 80.3572 11.3497 80.3572 13.0679C80.3572 14.7861 80.0181 16.4872 79.3597 18.0721C78.7013 19.6571 77.7366 21.0942 76.5219 22.3V22.3113ZM73.6164 13.0604C73.6164 9.01712 70.9166 5.73879 67.1473 5.73879C63.378 5.73879 60.6782 8.98321 60.6782 13.0604C60.6782 17.1376 63.2023 20.382 67.1473 20.382C70.9876 20.382 73.6164 17.1413 73.6164 13.0604Z" fill="currentColor"></path><path d="M12.8 39.1893H26.0486C26.086 39.7131 26.086 40.203 26.086 40.6966C26.086 49.3069 21.2436 54.1905 13.2151 54.1905C9.27008 54.1905 6.19257 53.0374 3.70215 50.4939C1.3102 47.9834 -0.0176051 44.6329 0.000176313 41.1525C0.000176313 33.586 5.60923 28.1108 13.2151 28.1108C18.024 28.1108 21.797 30.0665 24.3547 33.8649L18.5101 36.6872C17.1265 34.7692 15.3952 33.831 13.2151 33.831C9.27008 33.831 6.71235 36.6194 6.71235 41.4314C6.71235 46.2434 9.23643 49.0658 13.2151 49.0658C16.7114 49.0658 19.1645 47.1138 19.5122 44.4271H12.7814L12.8 39.1893Z" fill="currentColor"></path><path d="M49.8502 50.4146C47.3392 52.8731 43.9766 54.249 40.4756 54.2506C37.4173 54.2246 34.4566 53.1629 32.0695 51.2361C30.6511 50.0946 29.49 48.662 28.6633 47.0335C27.8366 45.405 27.3634 43.6179 27.275 41.7909C27.1865 39.9638 27.485 38.1388 28.1504 36.4369C28.8159 34.7351 29.8332 33.1954 31.1347 31.9203C33.6382 29.4609 36.9961 28.0845 40.4924 28.0845C43.9887 28.0845 47.3467 29.4609 49.8502 31.9203C51.0649 33.1261 52.0296 34.5632 52.688 36.1482C53.3465 37.7331 53.6855 39.4342 53.6855 41.1524C53.6855 42.8706 53.3465 44.5717 52.688 46.1566C52.0296 47.7415 51.0649 49.1787 49.8502 50.3845V50.4146ZM46.9447 41.1486C46.9447 37.1054 44.2486 33.827 40.4756 33.827C36.7026 33.827 34.0065 37.0677 34.0065 41.1486C34.0065 45.2296 36.5306 48.4702 40.4756 48.4702C44.316 48.4702 46.9447 45.2258 46.9447 41.1486Z" fill="currentColor"></path><path d="M77.5629 50.4146C75.0506 52.871 71.6888 54.2466 68.1883 54.2506C65.129 54.224 62.1672 53.1624 59.7784 51.2361C58.3608 50.094 57.2004 48.6611 56.3745 47.0324C55.5485 45.4038 55.0758 43.6168 54.9877 41.7899C54.8997 39.9631 55.1983 38.1383 55.8637 36.4366C56.5292 34.735 57.5462 33.1955 58.8473 31.9203C61.3509 29.4609 64.7088 28.0845 68.2051 28.0845C71.7014 28.0845 75.0594 29.4609 77.5629 31.9203C78.7776 33.1261 79.7423 34.5632 80.4007 36.1482C81.0591 37.7331 81.3982 39.4342 81.3982 41.1524C81.3982 42.8706 81.0591 44.5717 80.4007 46.1566C79.7423 47.7415 78.7776 49.1787 77.5629 50.3845V50.4146ZM74.6574 41.1486C74.6574 37.1054 71.9576 33.827 68.1883 33.827C64.419 33.827 61.7192 37.0677 61.7192 41.1486C61.7192 45.2296 64.2433 48.4702 68.1883 48.4702C72.0286 48.4702 74.6574 45.2258 74.6574 41.1486Z" fill="currentColor"></path><path d="M83.7168 28.6606H89.6699C94.2693 28.6606 97.9713 28.7322 101.225 31.0346C104.336 33.2277 105.996 36.6869 105.996 41.1447C105.996 45.6024 104.336 49.0202 101.225 51.2547C98.1134 53.4893 94.718 53.5872 90.601 53.5872H83.7168V28.6606ZM91.5358 48.0103C96.6924 48.0103 99.1492 46.0245 99.1492 41.1447C99.1492 36.1933 96.6214 34.2413 91.5358 34.2413H90.3953V48.0103H91.5358Z" fill="currentColor"></path><path d="M18.9586 65.171C17.16 63.1474 15.4287 62.1564 13.2486 62.1564C9.34095 62.1564 6.74583 65.171 6.74583 69.3725C6.74583 73.2085 9.3073 76.3097 13.2486 76.3097C15.4287 76.3097 17.16 75.3338 18.9586 73.2952V80.7524C16.9763 81.7756 14.784 82.3175 12.5568 82.3351C5.25756 82.3351 0 76.777 0 69.2481C0 61.7193 5.25756 56.1763 12.5568 56.1763C14.7828 56.1891 16.975 56.7259 18.9586 57.7438V65.171Z" fill="currentColor"></path><path d="M42.4125 78.5214C40.0636 80.8289 36.9566 82.1885 33.6798 82.3426C30.403 82.4968 27.1838 81.4349 24.6318 79.3579C23.2135 78.2168 22.0524 76.7846 21.2258 75.1564C20.3991 73.5282 19.9259 71.7413 19.8375 69.9146C19.749 68.0879 20.0475 66.2631 20.7129 64.5616C21.3783 62.86 22.3956 61.3207 23.697 60.0459C26.1996 57.5922 29.5536 56.2192 33.0454 56.2192C36.5372 56.2192 39.8912 57.5922 42.3938 60.0459C43.6085 61.2517 44.5732 62.6889 45.2316 64.2738C45.8901 65.8587 46.2291 67.5598 46.2291 69.278C46.2291 70.9962 45.8901 72.6973 45.2316 74.2822C44.5732 75.8671 43.6085 77.3043 42.3938 78.5101L42.4125 78.5214ZM39.4883 69.2704C39.4883 65.2272 36.7922 61.9489 33.0192 61.9489C29.2462 61.9489 26.5501 65.1933 26.5501 69.2704C26.5501 73.3476 29.0742 76.5921 33.0192 76.5921C36.8596 76.5921 39.4883 73.3514 39.4883 69.2704Z" fill="currentColor"></path><path d="M49.8936 75.4543C50.5724 75.4475 51.238 75.6443 51.8057 76.0194C52.3733 76.3946 52.8176 76.9313 53.082 77.5614C53.3464 78.1915 53.4191 78.8865 53.2908 79.5583C53.1624 80.2301 52.8389 80.8483 52.3612 81.3344C51.8835 81.8205 51.2733 82.1526 50.608 82.2886C49.9426 82.4246 49.2522 82.3582 48.6244 82.098C47.9965 81.8378 47.4596 81.3954 47.0817 80.8271C46.7038 80.2587 46.502 79.59 46.502 78.9059C46.498 77.9951 46.853 77.12 47.4889 76.4728C48.1249 75.8256 48.9898 75.4593 49.8936 75.4543Z" fill="currentColor"></path></g><defs><clipPath id="clip0_2228_162"><rect width="106" height="82.3538" fill="white"></rect></clipPath></defs>
+                </svg>
+                
+              </div>
+              
+            <div class="p-2">
+                <ul class="All-links flex justify-center items-center space-x-9">
+                    <li><a href="#"
+                        class="nav-link relative text-xs font-futura opacity-70 cursor-pointer leading-4 hover:opacity-50 sm:[350] hidden md:block">HOME</a>
+                </li>
+                    <li><a href="./shop.html"
+                            class="nav-link relative text-xs font-futura opacity-70 cursor-pointer leading-4 hover:opacity-50 sm:[350] hidden md:block">SHOP</a>
+                    </li>
+                
+                    <li><a href="./cart.html"
+                            class=" relative text-xs font-futura opacity-70 cursor-pointer leading-4 hover:opacity-50"><i
+                                class="fa-brands fa-opencart text-2xl nav-link"></i></a></li>
+                    <div class="menuIcon-container">
+                        <li class="menuIcon"><a href="#"
+                                class="nav-link relative text-2xl font-futura md:hidden cursor-pointer leading-4 lg:hidden xl:hidden sm:[350] block sm:[350] opacity-60"><i
+                                    class="fa-solid fa-bars "></i></a></li>
+                    </div>
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+        <div class="w-full fixed top-0 left-0 z-50">
+            <div class="menu h-full w-full m-2 bg-[#edede9] rounded-md p-20  sm:[350] hidden relative md:hidden">
+                <ul class="sm:[350] flex flex-col justify-center items-center space-y-9 ">
+                    <li><a href="#"
+                        class="nav-link relative text-xs font-futura opacity-40 cursor-pointer leading-4 hover:opacity-40">HOME</a>
+                </li>
+                    <li><a href="./shop.html"
+                            class="nav-link relative text-xs font-futura opacity-40 cursor-pointer leading-4 hover:opacity-50">SHOP</a>
+                    </li>
+                    <li><a href="./cart.html"
+                            class="nav-link relative text-xs font-futura opacity-40 cursor-pointer leading-4 hover:opacity-50"><i
+                                class="fa-brands fa-opencart text-2xl"></i></a></li>
+                    <li class="crossIcon"><a href="#"><i
+                                class="fa-solid fa-xmark text-2xl opacity-60 hover:text-opacity-80  absolute top-4 right-5 px-2 py-1 hover:bg-gray-300 rounded-full"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <main id="main">
+
+        <!--page1-->
+        <div class="page1 min-h-[100vh] w-full m-4 ">
+
+
+            <div class="heading pt-[8vw] m-4">
+                <h1
+                    class="text-[10vw] lg:text-left leading-none lg:pt-6 sm:[400] pt-[45vw] md:28-[10vw] sm:[400] text-center">
+                    CHANGE
+                </h1>
+
+
+                <h1 class="text-[10vw] lg:text-left leading-none sm:[400] text-center mb-5">
+
+                    THE COURSE
+                </h1>
+
+                <div
+                    class="h-[2px] w-[60vw] bg-gray-300 hover:ease-in hover:w-[40vw] -translate-x-10 ease-in duration-300">
+                </div>
+
+            </div>
+
+            <!-- Video Section -->
+
+            <div id="VideoCursor"
+                class="px-4 py-5 fixed z-[9] text-white rounded-full flex justify-center items-center bg-[#000] opacity-0">
+                Play
+            </div>
+
+            <div class="video-container h-[100vh] w-full m-auto rounded-lg">
+                <img src="/assets/spring-roll-6760871_1280-min-D-_uaRhr.jpg" class="h-full w-full object-cover" alt="">
+            </div>
+        </div>
+
+
+        <!--page2-->
+
+        <div class="page2 flex flex-col justify-center items-center sm:px-4 lg:flex-row lg:mt-[100px] p-4 lg:gap-14">
+            <div class="box-1 h-[650px] w-[400px] drop-shadow-2xl">
+                <img src="/assets/DSC0079_Dexter%20Kim-CNXd1ziJ.webp" data-scroll data-scroll-speed="1"
+                    class="h-full w-full object-cover bg-cover rounded-[2px]" alt="Image-1">
+            </div>
+            <div class="box-2 h-[650px] w-[400px] drop-shadow-2xl">
+                <img src="/assets/JTG_2919%20copy-r6aXh6cM.webp" data-scroll data-scroll-speed="1"
+                    class="h-full w-full object-cover bg-cover rounded-[2px]" alt="Image-2">
+            </div>
+            <div class="box-3 h-[650px] w-[400px] drop-shadow-2xl">
+                <img src="/assets/Rectangle%20220-CnxHEnY_.webp" data-scroll data-scroll-speed="1"
+                    class="h-full w-full object-cover bg-cover rounded-[2px]" alt="Image-3">
+            </div>
+        </div>
+
+        <!--page3-->
+
+        <div class="flex justify-between items-center p-4 sm:flex-col lg:flex-row">
+            <h1 data-scroll data-scroll-speed="-1"
+                class="lg:text-5xl lg:w-1/2 p-4 uppercase sm:w-full sm:text-3xl sm:text-center lg:text-left">We believe
+                in people, until they believe in themselves again.</h1>
+            <div data-scroll data-scroll-speed="-1" class="lg:w-1/4 sm:w-full sm:text-center pt-4 lg:text-left">
+                <p class="text-xs opacity-70 leading-5">Everything we do is designed to rebuild self worth and
+                    independence, in order to break free from the cycle of disadvantage.</p>
+                <p class="text-xs pt-6 opacity-70"> With every purchase you make with us, you're helping to change the
+                    course of someone's life; you're walking alongside vulnerable women as they find their way home
+                    again.</p>
+                <button
+                    class="px-4 py-3 rounded-xl bg-gray-600 hover:text-gray-300 active:bg-gray-800 duration-75 delay-75 ease-in text-white mt-5">Shop
+                    to Start</button>
+            </div>
+        </div>
+
+        <!--page4-->
+
+        <div class="page4 pt-4">
+            <div class="item-container flex justify-around items-center gap-4 m-4 pt-12">
+                <div class="b1 h-[35vw] w-[35vw] flex justify-center items-center flex-col">
+                    <img data-scroll data-scroll-speed="1" src="/assets/GreyRust-Cp9z8NA-.webp" id="cursor-img-1" class="w-full h-full object-cover" alt="GreyRust">
+                    <a href="#" class="opacity-50 hover:text-gray-800 text-center text-xs">Jac + Jack Buy 1, Give 1 Blanket -
+                        Grey/Rust <br>
+                        $380</a>
+                </div>
+                <div class="b2 h-[35vw] w-[35vw] flex justify-center items-center flex-col">
+                    <img data-scroll data-scroll-speed="1" src="/assets/Website%20Products%20(5)-DmedBQs7.webp" id="cursor-img-2" class="w-full h-full object-cover" alt="GreyRust">
+                    <a href="#" class="opacity-50 hover:text-gray-800 text-center text-xs">Two Good Co. Hoodie <br>
+                        $140
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="item-container flex justify-around items-center gap-4 m-4 pt-12 pb-6">
+                <div class="b1 h-[35vw] w-[35vw] flex justify-center items-center flex-col ">
+                    <img data-scroll data-scroll-speed="1" id="cursor-img-3" src="/assets/Two%20Hugs%20Candle%20Two%20Good%20Co-BVo83o3f.webp" class="w-full h-full object-cover"
+                        alt="GreyRust">
+                    <a href="#" class="opacity-50 hover:text-gray-800 text-center text-xs">Two Hugs Candle <br>
+                        $69
+                    </a>
+                </div>
+                <div class="b2 h-[35vw] w-[35vw] flex justify-center items-center flex-col">
+                    <img data-scroll data-scroll-speed="1" id="cursor-img-4" src="/assets/Good-Nights-Sleep-Pack-Expanded-Two-Good-Co-CEYwIqGG.webp"
+                        class="w-full h-full object-cover" alt="GreyRust">
+                    <a href="#" class="opacity-50 hover:text-gray-800 text-center text-xs">The Good Night's Sleep Care Pack <br>
+                        $125
+
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--page5-->
+
+        <div class="h-[1px] w-full p-2 bg-gray-200"></div>
+
+        <div class="page5 relative p-4 flex justify-center items-center flex-col">
+             <div class="massive-text lg:w-[55%] text-center uppercase p-4 pt-6 flex-col flex justify-center items-center">
+                  <h1 class="lg:text-[4.5vw] sm:w-full sm:leading-4 lg:py-4 lg:leading-[76px] tracking-tighter" data-scroll data-scroll-speed="1" >I think I speak for
+                    everyone when I say we
+                    are very grateful to
+                    have been able to come
+                    in and help out for the
+                    day; the work you do is
+                    amazing.
+                    </h1>
+
+                    <button  class="text-md bg-[#000] rounded-full lg:px-5 lg:py-5 text-white hover:text-gray-300 duration-200 delay-75 ease mt-5 sm:px-4 sm:py-3 sm:text-xs">SEND YOUR OWN MESSEAGE</button>
+                    <p  class="w-1/2 text-xs opacity-75 p-8 sm:w-full">Sometimes it’s the smallest actions <br> that  can  make the biggest impact.</p>
+             </div>
+        </div>
+
+        <!--page6-->
+
+        <div class="page6 pt-9 lg:flex justify-between items-center gap-4 sm:flex-col lg:flex-row">           
+            <div class="p-8 w-1/4 space-y-4 lg:pt-[8vw] sm:w-full md:w-full md:pt-[4vw]" data-scroll data-scroll-speed="1">
+                <h1 class="text-2xl">Our Impact</h1>
+                <p class="text-md sm:w-full leading-6 opacity-75">The thing is, we don't save anyone.</p>
+                <p class="text-md sm:w-full leading-6 opacity-75 ">What we do is provide a safe space for women to change the course of their own lives.</p>
+                <p class="text-md sm:w-full leading-6  opacity-75 py-8">After many years of living in crisis, abuse and complex trauma, restoring self-worth is foundational for independence. We believe that through experiences that promote love and respect, we can spark and nurture a sense of self-worth for those on the path of healing.</p>
+                <button class="px-4 py-3 bg-transparent border border-gray-400 hover:text-gray-600 text-black text-sm rounded-[10px] opacity-70">Two Good Co. Hoodie</button>
+            </div>
+        
+            <!-- Apply space-y to ensure vertical space between images on small screens -->
+            <div class="inside px-5 lg:flex justify-center items-center gap-5 mt-12 sm:flex-col lg:flex-row-reverse lg:gap-x-6 sm:space-y-2 img-container">
+                <div class="h-[500px] w-[400px]">
+                    <img data-scroll data-scroll-speed="1" src="/assets/Christina-Maria-Jes-Lindsay-9143-CWmce9sc.webp" id="img-1" class="w-full h-full object-cover" alt="">
+                </div>
+                <div class="h-[500px] w-[400px]">
+                    <img  data-scroll data-scroll-speed="1" src="/assets/Patricia-Work-Work-Good-Stories-Two-Good-Co-CRqgXIpw.webp" id="img-2" class="w-full h-full object-cover" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <!--page7-->
+        <div class="page7 flex justify-between items-center px-7 pt-[4vw]">
+              <input type="email" id="special-input" placeholder="ENTER YOUR EMAIL FOR GOOD" class="placeholder-black lg:text-4xl sm:text-xl lg:w-full sm:w-full py-2 outline-none border-b border-gray-400 bg-[#f7f7f7]">
+             <span class="special-icon"> <i class=" fa-solid fa-arrow-right pr-10 hover:opacity-65 opacity-80 text-xl cursor-pointer hover:-translate-y-3 duration-300 delay-75 ease-linear"></i></span>
+        </div>
+ 
+
+        <!--page8-->
+        <div class="footer mt-[5vw] lg:pb-[12.5vw] sm:py-[30vw] lg:flex lg:justify-between lg:items-center lg:p-6 w-full lg:flex-row md:flex md:justify-center md:items-center sm:flex sm:flex-col sm:space-y-10 sm:text-center lg:text-left">
+            <!-- First Part: Contact with us -->
+            <div data-scroll data-scroll-speed="1" class="first-part">
+                <h1 class="uppercase pb-5 opacity-55 font-mono font-black">Contact with us</h1>
+                <ul class="space-y-3">
+                    <li class="text-sm leading-3 opacity-75 hover:text-gray-500 duration-150 ease-out delay-75 cursor-pointer">Facebook</li>
+                    <li class="text-sm leading-3 opacity-75 hover:text-gray-500 duration-150 ease-out delay-75 cursor-pointer">Instagram</li>
+                    <li class="text-sm leading-3 opacity-75 hover:text-gray-500 duration-150 ease-out delay-75 cursor-pointer">LinkedIn</li>
+                    <li class="text-sm leading-3 opacity-75 hover:text-gray-500 duration-150 ease-out delay-75 cursor-pointer">Twitter</li>
+                    <li class="text-sm leading-3 opacity-75 hover:text-gray-500 duration-150 ease-out delay-75 cursor-pointer">YouTube</li>
+                </ul>
+            </div>
+        
+            <!-- Second Part: Logo and Legal Links -->
+            <div data-scroll data-scroll-speed="1" class="second-part lg:flex lg:flex-col lg:items-center sm:flex sm:flex-col sm:items-center sm:text-center lg:text-left">
+                <!-- Logo Section -->
+                <div class="logo flex justify-center items-center sm:m-auto sm:mb-6">
+                    <img src="/assets/images__1_-removebg-preview-min-Dyc7zE7q.png" class="object-cover w-[150px]" alt="Two Good Co Logo">
+                </div>
+                <!-- Legal Links Section -->
+                <div class="prerequisite-content lg:text-left sm:text-center flex items-center justify-center space-x-8 pt-[5vw] lg:pt-0 sm:pt-5 sm:flex-col sm:space-x-0 sm:space-y-3">
+                    <p class="text-xs opacity-40 hover:cursor-pointer hover:opacity-50">© Two Good Co. 2024</p>
+                    <p class="text-xs opacity-40 hover:cursor-pointer hover:opacity-50">Terms of Use</p>
+                    <p class="text-xs opacity-40 hover:cursor-pointer hover:opacity-50">Privacy Policy</p>
+                </div>
+            </div>
+        
+            <!-- Third Part: The Nitty Gritties -->
+            <div data-scroll data-scroll-speed="1" class="third-part">
+                <h1 class="uppercase pb-5 opacity-55 font-mono font-black">THE NITTY GRITTIES</h1>
+                <ul class="space-y-3">
+                    <li class="text-sm leading-3 opacity-75 hover:text-gray-500 duration-150 ease-out delay-75 cursor-pointer">Good Things FAQs</li>
+                    <li class="text-sm leading-3 opacity-75 hover:text-gray-500 duration-150 ease-out delay-75 cursor-pointer">Good Food FAQs</li>
+                    <li class="text-sm leading-3 opacity-75 hover:text-gray-500 duration-150 ease-out delay-75 cursor-pointer">Good Places</li>
+                    <li class="text-sm leading-3 opacity-75 hover:text-gray-500 duration-150 ease-out delay-75 cursor-pointer">Pathways</li>
+                    <li class="text-sm leading-3 opacity-75 hover:text-gray-500 duration-150 ease-out delay-75 cursor-pointer">Careers</li>
+                    <li class="text-sm leading-3 opacity-75 hover:text-gray-500 duration-150 ease-out delay-75 cursor-pointer">Wholesale</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <!--locomotive js-->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!--Gsap Cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!--scrollTrigger cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+    <script>
+        const menu = document.querySelector('.menu');
+const menuIcon = document.querySelector('.menuIcon');
+const crossIcon = document.querySelector('.crossIcon');
+const videoCursor = document.querySelector("#VideoCursor");
+const videoContainer = document.querySelector(".video-container");
+const heading = document.querySelectorAll(".heading h1");
+const navlink = document.querySelectorAll(".nav-link");
+const allLinks = document.querySelector(".All-links");
+const rightArrow = document.querySelector(".rightArrow");
+const miniImageContrainer = document.querySelector(".mini-img-container");
+const insideCont = document.querySelector(".inside-cont");
+const specialInput = document.querySelector("#special-input");
+const specialIcon = document.querySelector(".special-icon");
+const imgOne = document.querySelector("#img-1");
+const imgSecond = document.querySelector("#img-2")
+const imgContainer = document.querySelectorAll(".img-container div img");
+const crsr = document.querySelector(".cursor");
+const crsrImgOne = document.querySelector("#cursor-img-1")
+const crsrImgTwo = document.querySelector("#cursor-img-2")
+const crsrImgThree = document.querySelector("#cursor-img-3")
+const crsrImgFour = document.querySelector("#cursor-img-4");
+
+
+// smooth scrolling locomotive
+gsap.registerPlugin(ScrollTrigger);
+
+// Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+
+const locoScroll = new LocomotiveScroll({
+ el: document.querySelector("#main"),
+ smooth: true
+});
+// each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+locoScroll.on("scroll", ScrollTrigger.update);
+
+// tell ScrollTrigger to use these proxy methods for the "#main" element since Locomotive Scroll is hijacking things
+ScrollTrigger.scrollerProxy("#main", {
+ scrollTop(value) {
+   return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+ }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+ getBoundingClientRect() {
+   return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+ },
+ // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+ pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
+});
+
+
+// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+ScrollTrigger.refresh();
+
+// Toggle menu visibility on click
+menuIcon.addEventListener('click', () => {
+ menu.classList.toggle('hidden');
+ 
+
+});
+
+crossIcon.addEventListener('click', () => {
+ menu.classList.add('hidden');
+});
+
+
+  //Heading animations
+
+   headingAnimations()
+
+   function headingAnimations(){
+          
+        gsap.from(heading,{
+             opacity: 0,
+             duration : 0.9,
+             stagger :0.4,
+             y: 200
+        })
+   }
+        
+    
+// Cursor Animation
+   gsapCursorAnimations();
+
+function gsapCursorAnimations(){
+
+
+videoContainer.addEventListener("mousemove", (dets) => {
+ gsap.to(videoCursor, {
+     left: dets.clientX,  // No need for "px"
+     top: dets.clientY,  // No need for "px"
+     duration: 0.9,
+   // Shorter duration for smoother tracking
+ });
+});
+
+videoContainer.addEventListener("mouseenter",()=>{
+
+     gsap.to(videoCursor,{
+           scale:1,
+           opacity :1,
+           duration : 0.5,
+     })
+})
+// Cursor animation on mouse leave
+
+videoContainer.addEventListener("mouseleave", () => {
+ gsap.to(videoCursor, {
+     opacity: 0,
+     scale: 0,  // Slightly shrink when leaving
+ });
+});
+
+}
+
+// Navbar Animation
+
+  navbarAnimation();
+
+   function navbarAnimation(){
+
+        gsap.to(navlink,{
+
+             x:-50,
+             opacity :1,
+             stagger :0.6,
+             duration :1.2,
+             delay :0.3
+
+        })
+
+        gsap.to(allLinks,{
+           x:40,
+           opacity:1,
+           stagger:0.6,
+           duration:1.2,
+           delay :0.3
+        })
+  
+   }
+
+  // special component       
+specialComponent();
+
+ function specialComponent(){
+
+     specialInput.addEventListener("focus",()=>{
+
+         specialInput.placeholder = '';
+         specialIcon.innerHTML = '';
+         specialIcon.innerHTML = '<i class="fa-solid fa-tent-arrow-turn-left opacity-70 hover:opacity-55 cursor-pointer hover:-translate-y-3 duration-300 delay-75 ease-linear"></i>';
+         
+
+
+    })
+
+    specialInput.addEventListener("blur",()=>{
+
+      specialInput.placeholder = 'ENTER YOUR EMAIL FOR GOOD';
+      specialIcon.innerHTML = '';
+      specialIcon.innerHTML = '<i class=" fa-solid fa-arrow-right pr-5 hover:opacity-65 opacity-80 text-xl cursor-pointer hover:-translate-y-3 duration-300 delay-75 ease-linear"></i>';
+         
+
+ })
+ }
+
+
+  // Crsr Animation of Item Images
+crsrImageAnimation()
+
+function crsrImageAnimation(){
+ document.addEventListener("mousemove",function(dets){
+
+     gsap.to(crsr,{
+        left:dets.clientX,
+        top:dets.clientY,
+        duration:0.6,
+     })
+})
+
+//cursor for imgOnecrsr
+
+crsrImgOne.addEventListener("mouseenter",function(){
+    gsap.to(crsr,{
+       scale:1,
+       opacity:1,
+    })
+})
+
+
+
+crsrImgOne.addEventListener("mouseleave",function(){
+  gsap.to(crsr,{
+     scale:0,
+     opacity:0,
+  })
+})
+
+
+//cursor for imgTwoCrsr
+
+crsrImgTwo.addEventListener("mouseenter",function(){
+  gsap.to(crsr,{
+     scale:1,
+     opacity:1,
+     backgroundColor:"#e3d5ca"
+  })
+})
+
+
+
+crsrImgTwo.addEventListener("mouseleave",function(){
+gsap.to(crsr,{
+   scale:0,
+   opacity:0,
+   backgroundColor:"#c7f9cc"
+})
+})
+
+
+//cursor for imgThreeCrsr
+
+crsrImgThree.addEventListener("mouseenter",function(){
+  gsap.to(crsr,{
+     scale:1,
+     opacity:1,
+     backgroundColor:"#a8dadc"
+  })
+})
+
+
+
+crsrImgThree.addEventListener("mouseleave",function(){
+gsap.to(crsr,{
+   scale:0,
+   opacity:0,
+   backgroundColor:"#ffc2d1"
+})
+})
+
+//cursor for imgFourCrsr
+
+crsrImgFour.addEventListener("mouseenter",function(){
+gsap.to(crsr,{
+ scale:1,
+ opacity:1,
+ backgroundColor:"#d6ccc2"
+})
+})
+
+
+
+crsrImgFour.addEventListener("mouseleave",function(){
+gsap.to(crsr,{
+scale:0,
+opacity:0,
+backgroundColor:"#d6ccc2"
+})
+})
+
+}
+
+
+
+
+
+ </script>
+</body>
+
+</html>
